@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <h2>Welcome</h2>
+    <h2>laiso</h2>
+    <a href="http://lai.so/">Wi-Fiネットワークにログイン</a>
   </div>
 </template>
 
