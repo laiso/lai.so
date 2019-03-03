@@ -1,6 +1,1 @@
-[[redirects]]
-  from = "/blog"
-  to = "http://laiso.hatenablog.com"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
+
