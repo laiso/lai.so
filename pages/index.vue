@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2>laiso</h2>
-    <a href="http://lai.so/">Wi-Fiネットワークにログイン</a>
+    <a href="http://neverssl.com/">Wi-Fiネットワークにログイン</a>
   </div>
 </template>
 
