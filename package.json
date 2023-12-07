@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev ./dist",
+    "deploy": "npm run build && wrangler pages deploy ./dist",
     "astro": "astro"
   },
   "dependencies": {
