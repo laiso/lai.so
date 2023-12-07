@@ -1,0 +1,14 @@
+---
+import Blog from "@layouts/blog";
+import Preview from "@components/blog/preview";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection('entry');
+---
+
+<Blog title="Simple Blog">
+	<div class="content container">
+		<h2>記事一覧</h2>
+		{posts.map((p) => <Preview post={p} />)}
+	</div>
+</Blog>
