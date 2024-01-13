@@ -15,5 +15,8 @@
     "@astrojs/cloudflare": "^8.0.0",
     "astro": "^4.0.2",
     "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7"
   }
 }
