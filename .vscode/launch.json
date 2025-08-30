@@ -2,10 +2,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "./node_modules/.bin/astro dev",
-      "name": "Development server",
+      "name": "Dev: Vite + Chrome (Bun)",
+      "type": "node-terminal",
       "request": "launch",
-      "type": "node-terminal"
+      "command": "bun run dev",
+      "cwd": "${workspaceFolder}",
+      "serverReadyAction": {
+        "pattern": "Local:\\s*https?://localhost:(\\d+)",
+        "uriFormat": "http://localhost:%s",
+        "action": "debugWithChrome"
+      }
+    },
+    {
+      "name": "Chrome: http://localhost:5173",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"],
+      "runtimeArgs": ["--remote-allow-origins=*"]
     }
   ]
 }
